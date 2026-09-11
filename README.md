@@ -44,7 +44,7 @@
 - [Detection Process](#-detection-process)
 - [Example Output](#-example-output)
 - [Complaint Lifecycle](#-complaint-lifecycle)
-- [Project Benefits](#-project-benefits)
+- [Advantages of the System](#-advantages-of-the-system)
 - [Future Scope](#-future-scope)
 - [Project Highlights](#-project-highlights)
 - [License](#-license)
@@ -118,29 +118,25 @@ The **Smart Civic Action System** addresses these challenges through an automate
 
 
 
-| Feature | Description |
+- 🧠 **AI Waste Detection** – Detects waste using a trained YOLO model.
+  
+- 🔢 **Waste Counting** – Counts detected waste objects.
 
-|---|---|
+- ⚠️ **Severity Classification** – Categorizes waste conditions as Low, Medium, or High.
 
-| 🧠 **AI Waste Detection** | Detects waste using a trained YOLO model |
+- 📍 **Location Identification** – Associates the detected issue with location information.
 
-| 🔢 **Waste Counting** | Counts detected waste objects |
+- 📄 **Automatic Complaint Generation** – Creates a structured civic complaint automatically.
 
-| ⚠️ **Severity Classification** | Categorizes waste conditions as Low, Medium, or High |
+- 📊 **Complaint Tracking** – Tracks complaint status.
 
-| 📍 **Location Identification** | Associates the detected issue with location information |
+- 🚨 **Escalation** – Identifies cases requiring escalation.
 
-| 📝 **Automatic Complaint Generation** | Creates a structured civic complaint automatically |
+- 🗄️ **Database Storage** – Stores complaint information using SQLite.
 
-| 📊 **Complaint Tracking** | Tracks complaint status |
+- 📈 **Data Analysis** – Provides complaint-related analytical information.
 
-| 🚨 **Escalation** | Identifies cases requiring escalation |
-
-| 🗄️ **Database Storage** | Stores complaint information using SQLite |
-
-| 📈 **Data Analysis** | Provides complaint-related analytical information |
-
-| 🗺️ **Map Visualization** | Displays location information through the frontend |
+- 🗺️ **Map Visualization** – Displays location information through the frontend.
 
 
 
@@ -620,19 +616,30 @@ The frontend communicates with the FastAPI backend to display detection and comp
 
 ## 🔌 API Endpoints
 
+
+
 **GET /**  
+
 Check application status.
 
+
 **GET /complaints**  
+
 View all complaints.
 
+
 **POST /detect**  
+
 Upload an image and perform waste detection.
 
+
 **GET /complaints/{complaint_id}**  
+
 View a specific complaint.
 
+
 **GET /analysis**  
+
 Retrieve analytical information.
 
 
@@ -764,7 +771,7 @@ Escalation Required
 
 
 
-## 🔐 Project Benefits
+## 🌟 Advantages of the System
 
 
 
