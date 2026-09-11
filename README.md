@@ -590,22 +590,20 @@ The frontend communicates with the FastAPI backend to display detection and comp
 
 ## 🔌 API Endpoints
 
+**GET /**  
+Check application status.
 
+**GET /complaints**  
+View all complaints.
 
-| Method | Endpoint | Purpose |
+**POST /detect**  
+Upload an image and perform waste detection.
 
-|---|---|---|
+**GET /complaints/{complaint_id}**  
+View a specific complaint.
 
-| GET | `/` | Check application status |
-
-| GET | `/complaints` | View complaints |
-
-| POST | `/detect` | Upload image and perform waste detection |
-
-| GET | `/complaints/{complaint_id}` | View a specific complaint |
-
-| GET | `/analysis` | Retrieve analytical information |
-
+**GET /analysis**  
+Retrieve analytical information.
 
 
 ---
