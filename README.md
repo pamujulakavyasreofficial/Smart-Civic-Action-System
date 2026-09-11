@@ -1,4 +1,4 @@
-<img width="1004" height="802" alt="image" src="https://github.com/user-attachments/assets/a04fd462-70e0-49c1-9736-b45ea9654f54" /># 🌍 Smart Civic Action System
+# 🌍 Smart Civic Action System
 
 
 
