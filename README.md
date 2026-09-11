@@ -1,0 +1,866 @@
+\# 🌍 Smart Civic Action System
+
+
+
+\### AI-Powered Waste Detection \& Automated Civic Complaint Management
+
+
+
+<p align="center">
+
+&#x20; <b>Detect • Locate • Report • Track</b>
+
+</p>
+
+
+
+<p align="center">
+
+&#x20; An intelligent civic monitoring system that uses Computer Vision and YOLO-based object detection to identify waste, assess its severity, generate civic complaints, and track their resolution.
+
+</p>
+
+
+
+\---
+
+
+
+\## 🚀 Overview
+
+
+
+The \*\*Smart Civic Action System\*\* is an AI-based solution designed to improve waste monitoring and civic complaint management.
+
+
+
+Traditional waste reporting often depends on citizens or sanitation workers manually identifying and reporting waste. This can result in delayed reporting and slower response.
+
+
+
+The proposed system automates the initial stages of the process by analyzing an input image using a trained \*\*YOLO model\*\*, counting detected waste objects, classifying the severity, identifying the associated location, generating a complaint, and maintaining its status through the complaint lifecycle.
+
+
+
+\### 🔄 Core Workflow
+
+
+
+\*\*Image → AI Detection → Waste Count → Severity → Location → Complaint → Tracking\*\*
+
+
+
+\---
+
+
+
+\## 🎯 Problem Statement
+
+
+
+Public waste is often identified and reported manually, which can lead to:
+
+
+
+\- Delayed identification of waste
+
+\- Manual complaint registration
+
+\- Lack of structured complaint information
+
+\- Difficulty in monitoring complaint status
+
+\- Delayed escalation of serious waste conditions
+
+\- Limited data for analysis and reporting
+
+
+
+The \*\*Smart Civic Action System\*\* addresses these challenges through an automated AI-assisted workflow.
+
+
+
+\---
+
+
+
+\## 💡 Key Features
+
+
+
+| Feature | Description |
+
+|---|---|
+
+| 🧠 \*\*AI Waste Detection\*\* | Detects waste using a trained YOLO model |
+
+| 🔢 \*\*Waste Counting\*\* | Counts detected waste objects |
+
+| ⚠️ \*\*Severity Classification\*\* | Categorizes waste conditions as Low, Medium, or High |
+
+| 📍 \*\*Location Identification\*\* | Associates the detected issue with location information |
+
+| 📝 \*\*Automatic Complaint Generation\*\* | Creates a structured civic complaint automatically |
+
+| 📊 \*\*Complaint Tracking\*\* | Tracks complaint status |
+
+| 🚨 \*\*Escalation\*\* | Identifies cases requiring escalation |
+
+| 🗄️ \*\*Database Storage\*\* | Stores complaint information using SQLite |
+
+| 📈 \*\*Data Analysis\*\* | Provides complaint-related analytical information |
+
+| 🗺️ \*\*Map Visualization\*\* | Displays location information through the frontend |
+
+
+
+\---
+
+
+
+\## 🧠 AI-Based Waste Detection
+
+
+
+The system uses a trained \*\*YOLO-based object detection model\*\* to identify waste from an input image.
+
+
+
+The detection pipeline follows:
+
+
+
+```text
+
+Input Image
+
+&#x20;    ↓
+
+YOLO Model
+
+&#x20;    ↓
+
+Waste Detection
+
+&#x20;    ↓
+
+Number of Detected Objects
+
+&#x20;    ↓
+
+Severity Classification
+
+```
+
+
+
+The trained model is stored in:
+
+
+
+```text
+
+models/best.pt
+
+```
+
+
+
+\---
+
+
+
+\## ⚠️ Severity Classification
+
+
+
+The system determines severity based on the number of detected waste objects.
+
+
+
+| Waste Count | Severity |
+
+|---|---|
+
+| 0 – 3 | 🟢 Low |
+
+| 4 – 7 | 🟡 Medium |
+
+| 8 or more | 🔴 High |
+
+
+
+High-severity cases are marked as requiring escalation.
+
+
+
+\---
+
+
+
+\## 🔄 System Workflow
+
+
+
+```text
+
+&#x20;             Input Image
+
+&#x20;                  ↓
+
+&#x20;         YOLO Waste Detection
+
+&#x20;                  ↓
+
+&#x20;         Count Detected Waste
+
+&#x20;                  ↓
+
+&#x20;         Severity Classification
+
+&#x20;                  ↓
+
+&#x20;         Location Identification
+
+&#x20;                  ↓
+
+&#x20;      Automatic Complaint Generation
+
+&#x20;                  ↓
+
+&#x20;         Store in Database
+
+&#x20;                  ↓
+
+&#x20;         Complaint Tracking
+
+&#x20;                  ↓
+
+&#x20;       ┌──────────┴──────────┐
+
+&#x20;       ↓                     ↓
+
+&#x20;  High Severity         Normal Case
+
+&#x20;       ↓                     ↓
+
+&#x20;Escalation Required     Monitoring
+
+&#x20;       └──────────┬──────────┘
+
+&#x20;                  ↓
+
+&#x20;         Dashboard / Analysis
+
+```
+
+
+
+\---
+
+
+
+\## 🏗️ System Modules
+
+
+
+\### 1. 🧠 Waste Detection Module
+
+
+
+Uses the trained YOLO model to identify waste from the input image.
+
+
+
+\### 2. 📍 Location Identification Module
+
+
+
+Associates the detected waste with location information.
+
+
+
+\### 3. 📝 Automatic Complaint Generation
+
+
+
+Creates a unique complaint ID and prepares complaint information automatically.
+
+
+
+\### 4. 📋 Complaint Management \& Tracking
+
+
+
+Maintains the complaint lifecycle and updates its status.
+
+
+
+Example:
+
+
+
+```text
+
+Pending
+
+&#x20;  ↓
+
+In Progress
+
+&#x20;  ↓
+
+Resolved
+
+```
+
+
+
+\### 5. 🚨 Escalation \& Notification
+
+
+
+High-severity cases are identified for escalation.
+
+
+
+\### 6. 📊 Data Analysis \& Reporting
+
+
+
+Complaint information stored in the database can be analyzed to support monitoring and reporting.
+
+
+
+\---
+
+
+
+\## 🛠️ Technology Stack
+
+
+
+\### Backend
+
+
+
+\- Python
+
+\- FastAPI
+
+\- Uvicorn
+
+
+
+\### Artificial Intelligence
+
+
+
+\- YOLO
+
+\- Ultralytics
+
+\- OpenCV
+
+
+
+\### Data \& Database
+
+
+
+\- SQLite
+
+\- Pandas
+
+
+
+\### Frontend
+
+
+
+\- HTML
+
+\- CSS
+
+\- JavaScript
+
+\- Leaflet
+
+\- OpenStreetMap
+
+
+
+\### Development Tools
+
+
+
+\- Visual Studio Code
+
+\- Git
+
+\- GitHub
+
+
+
+\---
+
+
+
+\## 📁 Project Structure
+
+
+
+```text
+
+Smart-Civic-Action-System/
+
+│
+
+├── 📂 evidence/
+
+│   └── detected.jpg
+
+│
+
+├── 📂 frontend/
+
+│   └── index.html
+
+│
+
+├── 📂 models/
+
+│   └── best.pt
+
+│
+
+├── 📂 uploads/
+
+│   └── test.jpg
+
+│
+
+├── 📄 smart\_civic\_action.py
+
+├── 📄 main.py
+
+├── 📄 complaint.py
+
+├── 📄 severity.py
+
+├── 📄 location.py
+
+├── 📄 escalation.py
+
+├── 📄 tracking.py
+
+├── 📄 database.py
+
+├── 📄 data\_analysis.py
+
+├── 📄 requirements.txt
+
+├── 📄 test.jpg
+
+├── 📄 complaints.db
+
+├── 📄 yolov8n.pt
+
+└── 📄 .gitignore
+
+```
+
+
+
+\---
+
+
+
+\## 💻 Installation
+
+
+
+\### 1. Clone the Repository
+
+
+
+```bash
+
+git clone https://github.com/pamujulakavyasreofficial/Smart-Civic-Action-System.git
+
+```
+
+
+
+\### 2. Open the Project
+
+
+
+```bash
+
+cd Smart-Civic-Action-System
+
+```
+
+
+
+\### 3. Install Required Packages
+
+
+
+```bash
+
+python -m pip install -r requirements.txt
+
+```
+
+
+
+\---
+
+
+
+\## ▶️ Run the Backend
+
+
+
+Start the FastAPI application:
+
+
+
+```bash
+
+python -m uvicorn smart\_civic\_action:app --reload
+
+```
+
+
+
+The backend will run at:
+
+
+
+```text
+
+http://127.0.0.1:8000
+
+```
+
+
+
+FastAPI documentation:
+
+
+
+```text
+
+http://127.0.0.1:8000/docs
+
+```
+
+
+
+\---
+
+
+
+\## 🌐 Run the Frontend
+
+
+
+After starting the backend, open:
+
+
+
+```text
+
+frontend/index.html
+
+```
+
+
+
+in a web browser.
+
+
+
+The frontend communicates with the FastAPI backend to display detection and complaint information.
+
+
+
+\---
+
+
+
+\## 🔌 API Endpoints
+
+
+
+| Method | Endpoint | Purpose |
+
+|---|---|---|
+
+| GET | `/` | Check application status |
+
+| GET | `/complaints` | View complaints |
+
+| POST | `/detect` | Upload image and perform waste detection |
+
+| GET | `/complaints/{complaint\_id}` | View a specific complaint |
+
+| GET | `/analysis` | Retrieve analytical information |
+
+
+
+\---
+
+
+
+\## 📸 Detection Process
+
+
+
+A sample input image can be provided to the system.
+
+
+
+The system:
+
+
+
+\- Receives the image
+
+\- Processes it using the YOLO model
+
+\- Detects waste objects
+
+\- Counts the detected objects
+
+\- Determines severity
+
+\- Identifies the location
+
+\- Generates a complaint
+
+\- Stores the complaint
+
+\- Tracks its status
+
+\- Identifies whether escalation is required
+
+
+
+\---
+
+
+
+\## 📊 Example Output
+
+
+
+A sample detection can produce information such as:
+
+
+
+```text
+
+Waste Detected     : 11
+
+Severity           : High
+
+Escalation         : Required
+
+Complaint Status   : Pending
+
+```
+
+
+
+The detected output image is stored in:
+
+
+
+```text
+
+evidence/detected.jpg
+
+```
+
+
+
+\---
+
+
+
+\## 🗺️ Complaint Lifecycle
+
+
+
+```text
+
+Detection
+
+&#x20;   ↓
+
+Complaint Created
+
+&#x20;   ↓
+
+Pending
+
+&#x20;   ↓
+
+In Progress
+
+&#x20;   ↓
+
+Resolved
+
+```
+
+
+
+For high-severity conditions:
+
+
+
+```text
+
+High Severity
+
+&#x20;    ↓
+
+Escalation Required
+
+```
+
+
+
+\---
+
+
+
+\## 🔐 Project Benefits
+
+
+
+\- Reduces dependence on manual waste identification
+
+\- Automates initial complaint creation
+
+\- Provides structured complaint information
+
+\- Supports severity-based prioritization
+
+\- Enables complaint status tracking
+
+\- Provides a foundation for data-driven civic monitoring
+
+\- Integrates AI with a practical civic application
+
+
+
+\---
+
+
+
+\## 🔮 Future Scope
+
+
+
+The system can be extended with:
+
+
+
+\- 📡 Real-time CCTV integration
+
+\- 📍 Live GPS-based location detection
+
+\- 📱 Mobile application support
+
+\- 🔔 SMS and email notifications
+
+\- ☁️ Cloud deployment
+
+\- 🧠 Improved AI detection models
+
+\- 📊 Advanced analytics dashboards
+
+\- 🏛️ Integration with municipal systems
+
+\- 🔐 User authentication and role-based access
+
+\- 🌐 Large-scale deployment across multiple locations
+
+
+
+\---
+
+
+
+\## 👩‍💻 Contributors
+
+
+
+\### Pamujula Kavya Sre
+
+
+
+\---
+
+
+
+\## ⭐ Project Highlights
+
+
+
+\- 🤖 Artificial Intelligence
+
+\- 👁️ Computer Vision
+
+\- 🎯 YOLO Object Detection
+
+\- ⚡ FastAPI Backend
+
+\- 📝 Automated Complaint Generation
+
+\- 📍 Location Identification
+
+\- 🚨 Severity-Based Escalation
+
+\- 📊 Data Analysis
+
+\- 🗺️ Interactive Map
+
+
+
+\---
+
+
+
+\## 📜 License
+
+
+
+This project was developed as an academic project for educational and demonstration purposes.
+
+
+
+\---
+
+
+
+<p align="center">
+
+&#x20; <b>🌍 Smart Technology for Cleaner Communities</b>
+
+</p>
+
+
+
+<p align="center">
+
+&#x20; Built with Python • FastAPI • YOLO • Computer Vision
+
+</p>
+
