@@ -1,8 +1,8 @@
-\# 🌍 Smart Civic Action System
+# 🌍 Smart Civic Action System
 
 
 
-\### AI-Powered Waste Detection \& Automated Civic Complaint Management
+### AI-Powered Waste Detection & Automated Civic Complaint Management
 
 
 
@@ -22,15 +22,15 @@
 
 
 
-\---
+---
 
 
 
-\## 🚀 Overview
+## 🚀 Overview
 
 
 
-The \*\*Smart Civic Action System\*\* is an AI-based solution designed to improve waste monitoring and civic complaint management.
+The **Smart Civic Action System** is an AI-based solution designed to improve waste monitoring and civic complaint management.
 
 
 
@@ -38,23 +38,23 @@ Traditional waste reporting often depends on citizens or sanitation workers manu
 
 
 
-The proposed system automates the initial stages of the process by analyzing an input image using a trained \*\*YOLO model\*\*, counting detected waste objects, classifying the severity, identifying the associated location, generating a complaint, and maintaining its status through the complaint lifecycle.
+The proposed system automates the initial stages of the process by analyzing an input image using a trained **YOLO model**, counting detected waste objects, classifying the severity, identifying the associated location, generating a complaint, and maintaining its status through the complaint lifecycle.
 
 
 
-\### 🔄 Core Workflow
+### 🔄 Core Workflow
 
 
 
-\*\*Image → AI Detection → Waste Count → Severity → Location → Complaint → Tracking\*\*
+**Image → AI Detection → Waste Count → Severity → Location → Complaint → Tracking**
 
 
 
-\---
+---
 
 
 
-\## 🎯 Problem Statement
+## 🎯 Problem Statement
 
 
 
@@ -62,29 +62,29 @@ Public waste is often identified and reported manually, which can lead to:
 
 
 
-\- Delayed identification of waste
+- Delayed identification of waste
 
-\- Manual complaint registration
+- Manual complaint registration
 
-\- Lack of structured complaint information
+- Lack of structured complaint information
 
-\- Difficulty in monitoring complaint status
+- Difficulty in monitoring complaint status
 
-\- Delayed escalation of serious waste conditions
+- Delayed escalation of serious waste conditions
 
-\- Limited data for analysis and reporting
-
-
-
-The \*\*Smart Civic Action System\*\* addresses these challenges through an automated AI-assisted workflow.
+- Limited data for analysis and reporting
 
 
 
-\---
+The **Smart Civic Action System** addresses these challenges through an automated AI-assisted workflow.
 
 
 
-\## 💡 Key Features
+---
+
+
+
+## 💡 Key Features
 
 
 
@@ -92,37 +92,37 @@ The \*\*Smart Civic Action System\*\* addresses these challenges through an auto
 
 |---|---|
 
-| 🧠 \*\*AI Waste Detection\*\* | Detects waste using a trained YOLO model |
+| 🧠 **AI Waste Detection** | Detects waste using a trained YOLO model |
 
-| 🔢 \*\*Waste Counting\*\* | Counts detected waste objects |
+| 🔢 **Waste Counting** | Counts detected waste objects |
 
-| ⚠️ \*\*Severity Classification\*\* | Categorizes waste conditions as Low, Medium, or High |
+| ⚠️ **Severity Classification** | Categorizes waste conditions as Low, Medium, or High |
 
-| 📍 \*\*Location Identification\*\* | Associates the detected issue with location information |
+| 📍 **Location Identification** | Associates the detected issue with location information |
 
-| 📝 \*\*Automatic Complaint Generation\*\* | Creates a structured civic complaint automatically |
+| 📝 **Automatic Complaint Generation** | Creates a structured civic complaint automatically |
 
-| 📊 \*\*Complaint Tracking\*\* | Tracks complaint status |
+| 📊 **Complaint Tracking** | Tracks complaint status |
 
-| 🚨 \*\*Escalation\*\* | Identifies cases requiring escalation |
+| 🚨 **Escalation** | Identifies cases requiring escalation |
 
-| 🗄️ \*\*Database Storage\*\* | Stores complaint information using SQLite |
+| 🗄️ **Database Storage** | Stores complaint information using SQLite |
 
-| 📈 \*\*Data Analysis\*\* | Provides complaint-related analytical information |
+| 📈 **Data Analysis** | Provides complaint-related analytical information |
 
-| 🗺️ \*\*Map Visualization\*\* | Displays location information through the frontend |
-
-
-
-\---
+| 🗺️ **Map Visualization** | Displays location information through the frontend |
 
 
 
-\## 🧠 AI-Based Waste Detection
+---
 
 
 
-The system uses a trained \*\*YOLO-based object detection model\*\* to identify waste from an input image.
+## 🧠 AI-Based Waste Detection
+
+
+
+The system uses a trained **YOLO-based object detection model** to identify waste from an input image.
 
 
 
@@ -166,11 +166,11 @@ models/best.pt
 
 
 
-\---
+---
 
 
 
-\## ⚠️ Severity Classification
+## ⚠️ Severity Classification
 
 
 
@@ -194,11 +194,11 @@ High-severity cases are marked as requiring escalation.
 
 
 
-\---
+---
 
 
 
-\## 🔄 System Workflow
+## 🔄 System Workflow
 
 
 
@@ -256,15 +256,15 @@ High-severity cases are marked as requiring escalation.
 
 
 
-\---
+---
 
 
 
-\## 🏗️ System Modules
+## 🏗️ System Modules
 
 
 
-\### 1. 🧠 Waste Detection Module
+### 1. 🧠 Waste Detection Module
 
 
 
@@ -272,7 +272,7 @@ Uses the trained YOLO model to identify waste from the input image.
 
 
 
-\### 2. 📍 Location Identification Module
+### 2. 📍 Location Identification Module
 
 
 
@@ -280,7 +280,7 @@ Associates the detected waste with location information.
 
 
 
-\### 3. 📝 Automatic Complaint Generation
+### 3. 📝 Automatic Complaint Generation
 
 
 
@@ -288,7 +288,7 @@ Creates a unique complaint ID and prepares complaint information automatically.
 
 
 
-\### 4. 📋 Complaint Management \& Tracking
+### 4. 📋 Complaint Management & Tracking
 
 
 
@@ -316,7 +316,7 @@ Resolved
 
 
 
-\### 5. 🚨 Escalation \& Notification
+### 5. 🚨 Escalation & Notification
 
 
 
@@ -324,7 +324,7 @@ High-severity cases are identified for escalation.
 
 
 
-\### 6. 📊 Data Analysis \& Reporting
+### 6. 📊 Data Analysis & Reporting
 
 
 
@@ -332,81 +332,81 @@ Complaint information stored in the database can be analyzed to support monitori
 
 
 
-\---
+---
 
 
 
-\## 🛠️ Technology Stack
+## 🛠️ Technology Stack
 
 
 
-\### Backend
+### Backend
 
 
 
-\- Python
+- Python
 
-\- FastAPI
+- FastAPI
 
-\- Uvicorn
-
-
-
-\### Artificial Intelligence
+- Uvicorn
 
 
 
-\- YOLO
-
-\- Ultralytics
-
-\- OpenCV
+### Artificial Intelligence
 
 
 
-\### Data \& Database
+- YOLO
+
+- Ultralytics
+
+- OpenCV
 
 
 
-\- SQLite
-
-\- Pandas
+### Data & Database
 
 
 
-\### Frontend
+- SQLite
+
+- Pandas
 
 
 
-\- HTML
-
-\- CSS
-
-\- JavaScript
-
-\- Leaflet
-
-\- OpenStreetMap
+### Frontend
 
 
 
-\### Development Tools
+- HTML
+
+- CSS
+
+- JavaScript
+
+- Leaflet
+
+- OpenStreetMap
 
 
 
-\- Visual Studio Code
-
-\- Git
-
-\- GitHub
+### Development Tools
 
 
 
-\---
+- Visual Studio Code
+
+- Git
+
+- GitHub
 
 
 
-\## 📁 Project Structure
+---
+
+
+
+## 📁 Project Structure
 
 
 
@@ -440,7 +440,7 @@ Smart-Civic-Action-System/
 
 │
 
-├── 📄 smart\_civic\_action.py
+├── 📄 smart_civic_action.py
 
 ├── 📄 main.py
 
@@ -456,7 +456,7 @@ Smart-Civic-Action-System/
 
 ├── 📄 database.py
 
-├── 📄 data\_analysis.py
+├── 📄 data_analysis.py
 
 ├── 📄 requirements.txt
 
@@ -472,15 +472,15 @@ Smart-Civic-Action-System/
 
 
 
-\---
+---
 
 
 
-\## 💻 Installation
+## 💻 Installation
 
 
 
-\### 1. Clone the Repository
+### 1. Clone the Repository
 
 
 
@@ -492,7 +492,7 @@ git clone https://github.com/pamujulakavyasreofficial/Smart-Civic-Action-System.
 
 
 
-\### 2. Open the Project
+### 2. Open the Project
 
 
 
@@ -504,7 +504,7 @@ cd Smart-Civic-Action-System
 
 
 
-\### 3. Install Required Packages
+### 3. Install Required Packages
 
 
 
@@ -516,11 +516,11 @@ python -m pip install -r requirements.txt
 
 
 
-\---
+---
 
 
 
-\## ▶️ Run the Backend
+## ▶️ Run the Backend
 
 
 
@@ -530,7 +530,7 @@ Start the FastAPI application:
 
 ```bash
 
-python -m uvicorn smart\_civic\_action:app --reload
+python -m uvicorn smart_civic_action:app --reload
 
 ```
 
@@ -560,11 +560,11 @@ http://127.0.0.1:8000/docs
 
 
 
-\---
+---
 
 
 
-\## 🌐 Run the Frontend
+## 🌐 Run the Frontend
 
 
 
@@ -588,11 +588,11 @@ The frontend communicates with the FastAPI backend to display detection and comp
 
 
 
-\---
+---
 
 
 
-\## 🔌 API Endpoints
+## 🔌 API Endpoints
 
 
 
@@ -606,17 +606,17 @@ The frontend communicates with the FastAPI backend to display detection and comp
 
 | POST | `/detect` | Upload image and perform waste detection |
 
-| GET | `/complaints/{complaint\_id}` | View a specific complaint |
+| GET | `/complaints/{complaint_id}` | View a specific complaint |
 
 | GET | `/analysis` | Retrieve analytical information |
 
 
 
-\---
+---
 
 
 
-\## 📸 Detection Process
+## 📸 Detection Process
 
 
 
@@ -628,33 +628,33 @@ The system:
 
 
 
-\- Receives the image
+- Receives the image
 
-\- Processes it using the YOLO model
+- Processes it using the YOLO model
 
-\- Detects waste objects
+- Detects waste objects
 
-\- Counts the detected objects
+- Counts the detected objects
 
-\- Determines severity
+- Determines severity
 
-\- Identifies the location
+- Identifies the location
 
-\- Generates a complaint
+- Generates a complaint
 
-\- Stores the complaint
+- Stores the complaint
 
-\- Tracks its status
+- Tracks its status
 
-\- Identifies whether escalation is required
-
-
-
-\---
+- Identifies whether escalation is required
 
 
 
-\## 📊 Example Output
+---
+
+
+
+## 📊 Example Output
 
 
 
@@ -688,11 +688,11 @@ evidence/detected.jpg
 
 
 
-\---
+---
 
 
 
-\## 🗺️ Complaint Lifecycle
+## 🗺️ Complaint Lifecycle
 
 
 
@@ -736,35 +736,35 @@ Escalation Required
 
 
 
-\---
+---
 
 
 
-\## 🔐 Project Benefits
+## 🔐 Project Benefits
 
 
 
-\- Reduces dependence on manual waste identification
+- Reduces dependence on manual waste identification
 
-\- Automates initial complaint creation
+- Automates initial complaint creation
 
-\- Provides structured complaint information
+- Provides structured complaint information
 
-\- Supports severity-based prioritization
+- Supports severity-based prioritization
 
-\- Enables complaint status tracking
+- Enables complaint status tracking
 
-\- Provides a foundation for data-driven civic monitoring
+- Provides a foundation for data-driven civic monitoring
 
-\- Integrates AI with a practical civic application
-
-
-
-\---
+- Integrates AI with a practical civic application
 
 
 
-\## 🔮 Future Scope
+---
+
+
+
+## 🔮 Future Scope
 
 
 
@@ -772,73 +772,73 @@ The system can be extended with:
 
 
 
-\- 📡 Real-time CCTV integration
+- 📡 Real-time CCTV integration
 
-\- 📍 Live GPS-based location detection
+- 📍 Live GPS-based location detection
 
-\- 📱 Mobile application support
+- 📱 Mobile application support
 
-\- 🔔 SMS and email notifications
+- 🔔 SMS and email notifications
 
-\- ☁️ Cloud deployment
+- ☁️ Cloud deployment
 
-\- 🧠 Improved AI detection models
+- 🧠 Improved AI detection models
 
-\- 📊 Advanced analytics dashboards
+- 📊 Advanced analytics dashboards
 
-\- 🏛️ Integration with municipal systems
+- 🏛️ Integration with municipal systems
 
-\- 🔐 User authentication and role-based access
+- 🔐 User authentication and role-based access
 
-\- 🌐 Large-scale deployment across multiple locations
-
-
-
-\---
+- 🌐 Large-scale deployment across multiple locations
 
 
 
-\## 👩‍💻 Contributors
+---
 
 
 
-\### Pamujula Kavya Sre
+## 👩‍💻 Contributors
 
 
 
-\---
+### Pamujula Kavya Sre
 
 
 
-\## ⭐ Project Highlights
+---
 
 
 
-\- 🤖 Artificial Intelligence
-
-\- 👁️ Computer Vision
-
-\- 🎯 YOLO Object Detection
-
-\- ⚡ FastAPI Backend
-
-\- 📝 Automated Complaint Generation
-
-\- 📍 Location Identification
-
-\- 🚨 Severity-Based Escalation
-
-\- 📊 Data Analysis
-
-\- 🗺️ Interactive Map
+## ⭐ Project Highlights
 
 
 
-\---
+- 🤖 Artificial Intelligence
+
+- 👁️ Computer Vision
+
+- 🎯 YOLO Object Detection
+
+- ⚡ FastAPI Backend
+
+- 📝 Automated Complaint Generation
+
+- 📍 Location Identification
+
+- 🚨 Severity-Based Escalation
+
+- 📊 Data Analysis
+
+- 🗺️ Interactive Map
 
 
 
-\## 📜 License
+---
+
+
+
+## 📜 License
 
 
 
@@ -846,7 +846,7 @@ This project was developed as an academic project for educational and demonstrat
 
 
 
-\---
+---
 
 
 
