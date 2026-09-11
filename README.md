@@ -134,19 +134,19 @@ The detection pipeline follows:
 
 Input Image
 
-&#x20;    ↓
+    ↓
 
 YOLO Model
 
-&#x20;    ↓
+    ↓
 
 Waste Detection
 
-&#x20;    ↓
+    ↓
 
 Number of Detected Objects
 
-&#x20;    ↓
+    ↓
 
 Severity Classification
 
@@ -178,15 +178,11 @@ The system determines severity based on the number of detected waste objects.
 
 
 
-| Waste Count | Severity |
+🟢 **Low** — 0–3 waste objects
 
-|---|---|
+🟡 **Medium** — 4–7 waste objects
 
-| 0 – 3 | 🟢 Low |
-
-| 4 – 7 | 🟡 Medium |
-
-| 8 or more | 🔴 High |
+🔴 **High** — 8 or more waste objects
 
 
 
@@ -204,53 +200,53 @@ High-severity cases are marked as requiring escalation.
 
 ```text
 
-&#x20;             Input Image
+             Input Image
 
-&#x20;                  ↓
+                  ↓
 
-&#x20;         YOLO Waste Detection
+         YOLO Waste Detection
 
-&#x20;                  ↓
+                  ↓
 
-&#x20;         Count Detected Waste
+         Count Detected Waste
 
-&#x20;                  ↓
+                  ↓
 
-&#x20;         Severity Classification
+         Severity Classification
 
-&#x20;                  ↓
+                  ↓
 
-&#x20;         Location Identification
+         Location Identification
 
-&#x20;                  ↓
+                  ↓
 
-&#x20;      Automatic Complaint Generation
+      Automatic Complaint Generation
 
-&#x20;                  ↓
+                  ↓
 
-&#x20;         Store in Database
+         Store in Database
 
-&#x20;                  ↓
+                  ↓
 
-&#x20;         Complaint Tracking
+         Complaint Tracking
 
-&#x20;                  ↓
+                  ↓
 
-&#x20;       ┌──────────┴──────────┐
+       ┌──────────┴──────────┐
 
-&#x20;       ↓                     ↓
+       ↓                     ↓
 
-&#x20;  High Severity         Normal Case
+  High Severity         Normal Case
 
-&#x20;       ↓                     ↓
+       ↓                     ↓
 
-&#x20;Escalation Required     Monitoring
+Escalation Required     Monitoring
 
-&#x20;       └──────────┬──────────┘
+       └──────────┬──────────┘
 
-&#x20;                  ↓
+                  ↓
 
-&#x20;         Dashboard / Analysis
+         Dashboard / Analysis
 
 ```
 
@@ -304,11 +300,11 @@ Example:
 
 Pending
 
-&#x20;  ↓
+  ↓
 
 In Progress
 
-&#x20;  ↓
+  ↓
 
 Resolved
 
@@ -700,19 +696,19 @@ evidence/detected.jpg
 
 Detection
 
-&#x20;   ↓
+   ↓
 
 Complaint Created
 
-&#x20;   ↓
+   ↓
 
 Pending
 
-&#x20;   ↓
+   ↓
 
 In Progress
 
-&#x20;   ↓
+   ↓
 
 Resolved
 
@@ -728,7 +724,7 @@ For high-severity conditions:
 
 High Severity
 
-&#x20;    ↓
+    ↓
 
 Escalation Required
 
