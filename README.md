@@ -435,59 +435,51 @@ Complaint information stored in the database can be analyzed to support monitori
 ```text
 
 Smart-Civic-Action-System/
-
 │
-
-├── 📂 evidence/
-
+├── 📁 evidence/
+|
 │   └── detected.jpg
-
 │
-
-├── 📂 frontend/
-
+├── 📁 frontend/
+|
 │   └── index.html
-
 │
-
-├── 📂 models/
-
+├── 📁 models/
+|
 │   └── best.pt
-
 │
-
-├── 📂 uploads/
-
+├── 📁 uploads/
+|
 │   └── test.jpg
-
 │
-
-├── 📄 smart_civic_action.py
-
-├── 📄 main.py
-
-├── 📄 complaint.py
-
-├── 📄 severity.py
-
-├── 📄 location.py
-
-├── 📄 escalation.py
-
-├── 📄 tracking.py
-
-├── 📄 database.py
-
-├── 📄 data_analysis.py
-
+├── 📁 backend/
+|   |
+│   ├── smart_civic_action.py
+|   |
+│   ├── main.py
+|   |
+│   ├── complaint.py
+|   |
+│   ├── severity.py
+|   |
+│   ├── location.py
+|   |
+│   ├── escalation.py
+|   |
+│   ├── tracking.py
+|   |
+│   ├── database.py
+|   |
+│   └── data_analysis.py
+│
 ├── 📄 requirements.txt
-
+|
 ├── 📄 test.jpg
-
-├── 📄 complaints.db
-
-├── 📄 yolov8n.pt
-
+|
+├── 🗄️ complaints.db
+|
+├── 🤖 yolov8n.pt
+|
 └── 📄 .gitignore
 
 ```
