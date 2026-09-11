@@ -1,4 +1,4 @@
-# 🌍 Smart Civic Action System
+<img width="1004" height="802" alt="image" src="https://github.com/user-attachments/assets/a04fd462-70e0-49c1-9736-b45ea9654f54" /># 🌍 Smart Civic Action System
 
 
 
@@ -19,6 +19,36 @@
 &#x20; An intelligent civic monitoring system that uses Computer Vision and YOLO-based object detection to identify waste, assess its severity, generate civic complaints, and track their resolution.
 
 </p>
+
+
+
+---
+
+
+
+## 📌 Table of Contents
+
+- [Overview](#-overview)
+- [Problem Statement](#-problem-statement)
+- [Key Features](#-key-features)
+- [AI-Based Waste Detection](#-ai-based-waste-detection)
+- [Severity Classification](#-severity-classification)
+- [System Workflow](#-system-workflow)
+- [System Modules](#-system-modules)
+- [Technology Stack](#-technology-stack)
+- [Project Structure](#-project-structure)
+- [Installation](#-installation)
+- [Run the Backend](#-run-the-backend)
+- [Run the Frontend](#-run-the-frontend)
+- [API Endpoints](#-api-endpoints)
+- [Detection Process](#-detection-process)
+- [Example Output](#-example-output)
+- [Complaint Lifecycle](#-complaint-lifecycle)
+- [Project Benefits](#-project-benefits)
+- [Future Scope](#-future-scope)
+- [Project Highlights](#-project-highlights)
+- [License](#-license)
+- [Contact](#-contact)
 
 
 
@@ -788,16 +818,6 @@ The system can be extended with:
 
 
 
----
-
-
-
-## 👩‍💻 Contributors
-
-
-
-### Pamujula Kavya Sre
-
 
 
 ---
@@ -842,6 +862,21 @@ This project was developed as an academic project for educational and demonstrat
 
 ---
 
+
+
+## 📧 Contact
+
+**Maintainer:** Pamujula Kavya Sre
+
+**GitHub:** [pamujulakavyasreofficial](https://github.com/pamujulakavyasreofficial)
+
+**Email:** pamujulakavyasreofficial@gmail.com
+
+**Project Repository:** [Smart Civic Action System](https://github.com/pamujulakavyasreofficial/Smart-Civic-Action-System)
+
+
+
+---
 
 
 <p align="center">
