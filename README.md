@@ -500,7 +500,7 @@ Smart-Civic-Action-System/
 
 ```bash
 
-git clone https://github.com/pamujulakavyasreofficial/Smart-Civic-Action-System.git
+[GitHub Repository](https://github.com/pamujulakavyasreofficial/Smart-Civic-Action-System)
 
 ```
 
@@ -556,7 +556,7 @@ The backend will run at:
 
 ```text
 
-http://127.0.0.1:8000
+[http://127.0.0.1:8000](http://127.0.0.1:8000)
 
 ```
 
@@ -568,7 +568,7 @@ FastAPI documentation:
 
 ```text
 
-http://127.0.0.1:8000/docs
+[http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 
 ```
 
@@ -588,7 +588,7 @@ After starting the backend, open:
 
 ```text
 
-frontend/index.html
+[frontend/index.html](frontend/index.html)
 
 ```
 
