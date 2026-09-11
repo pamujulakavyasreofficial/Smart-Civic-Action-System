@@ -498,7 +498,7 @@ Smart-Civic-Action-System/
 
 
 
-[https://github.com/pamujulakavyasreofficial/Smart-Civic-Action-System](https://github.com/pamujulakavyasreofficial/Smart-Civic-Action-System)
+[GitHub Repository](https://github.com/pamujulakavyasreofficial/Smart-Civic-Action-System)
 
 ```bash
 git clone https://github.com/pamujulakavyasreofficial/Smart-Civic-Action-System.git
